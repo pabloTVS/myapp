@@ -1,0 +1,13 @@
+<h1>{{title}} {{name}}</h1>
+
+<p>{{1+45}}</p>
+
+<button (click)="changeTitle()">"Púlsame"</button> <br /> <br />
+<button (click)="addUnaCosa()">"Añade"</button>
+<input type='text' [(ngModel)]="nombreCosa" (keydown.enter)="addUnaCosa()"> {{ nombreCosa}}
+
+<ul>
+  <LI *ngFor="let acosa of cosas">
+    {{acosa}}
+  </LI>
+</ul>
